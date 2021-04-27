@@ -33,7 +33,6 @@ int main(void)
         maxXOR(q);
     }
 
-    cout << "ans" << '\n';
     // 정답 출력
     for(int i = 0 ; i < q ; i++) {
         cout << ans[i] << '\n';
