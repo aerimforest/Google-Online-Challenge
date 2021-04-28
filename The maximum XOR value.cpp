@@ -5,7 +5,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <cstdio>
 #include <string>
 #define MAX 1000
 using namespace std;
