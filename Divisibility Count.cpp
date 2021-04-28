@@ -24,8 +24,8 @@ void count(int n, int x, int y)
     for(int i = 2 ; num < pow(10, n) ; i++) {
         cnt++;
         num *= i;
-    }
-    ans.push_back(cnt);
+    } 
+    ans.push_back(cnt % ((int)pow(10, 9) + 7));
 }
 
 int main(void)
