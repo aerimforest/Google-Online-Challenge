@@ -21,9 +21,10 @@ void count(int n, int x, int y)
     int cnt = 0, num;
     num = x*y / gcd(x, y); // 최소공배수
 
-    for(int i = 2 ; num < pow(10, n) ; i++) {
-        cnt++;
-        num *= i;
+    for(int i = num ; i < pow(10, n) ; i+=num) {
+        if(i > pow(10, n-1)) {
+            cnt++;
+        }
     } 
     ans.push_back(cnt % ((int)pow(10, 9) + 7));
 }
